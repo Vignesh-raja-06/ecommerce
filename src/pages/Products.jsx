@@ -1,13 +1,49 @@
 import React, { useState } from 'react'
 
 const productsData = [
-    { id: 1, name: "Stellar Book Pro", price: 899, category: "Laptops", image: "💻" },
-    { id: 2, name: "QuietFlow Headphones", price: 149, category: "Audio", image: "🎧" },
-    { id: 3, name: "ErgoDesk Mouse", price: 59, category: "Accessories", image: "🖱️" },
-    { id: 4, name: "Lumina Desk Lamp", price: 45, category: "Lifestyle", image: "💡" },
-    { id: 5, name: "FocusPad XL", price: 29, category: "Accessories", image: "⌨️" },
-    { id: 6, name: "Acoustic Pods", price: 129, category: "Audio", image: "📻" },
-]
+    { 
+        id: 1, 
+        name: "Stellar Book Pro", 
+        price: 899, 
+        category: "Laptops", 
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd4ejUavHCU_27wm0HHYE-1H84xcyML-pFig&s"
+    },
+    { 
+        id: 2, 
+        name: "QuietFlow Headphones", 
+        price: 149, 
+        category: "Audio", 
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRru1gpWx9p9eROH8dQpyoG49wYtbzP4GXcYA&s"
+    },
+    { 
+        id: 3, 
+        name: "ErgoDesk Mouse", 
+        price: 59, 
+        category: "Accessories", 
+        image: "https://cdn.shopify.com/s/files/1/2084/6601/files/mouse-with-additional-buttons.jpg?v=1721141924"
+    },
+    { 
+        id: 4, 
+        name: "Lumina Desk Lamp", 
+        price: 45, 
+        category: "Lifestyle", 
+        image: "https://mobilla.in/cdn/shop/files/mcharge_lumina_1.png?v=1741093584"
+    },
+    { 
+        id: 5, 
+        name: "FocusPad XL", 
+        price: 29, 
+        category: "Accessories", 
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8ffgSE1i69yZYjPmnjfRd-mk9RJrOo_EiOw&s"
+    },
+    { 
+        id: 6, 
+        name: "iphone", 
+        price: 999, 
+        category: "mobile", 
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdjxA4-jlECytxXWi100sXAUDAl8RW6aoVpA&s"
+    },
+];
 
 const Products = () => {
     const [filter, setFilter] = useState('All');
@@ -36,7 +72,16 @@ const Products = () => {
             <div className="product-grid">
                 {filteredProducts.map(product => (
                     <div key={product.id} className="product-card glass-card">
-                        <div className="product-image">{product.image}</div>
+                        
+                        {/* ✅ FIXED IMAGE PART */}
+                        <div className="product-image">
+                            <img 
+                                src={product.image} 
+                                alt={product.name} 
+                                style={{ width: "100%", height: "200px", objectFit: "cover" }}
+                            />
+                        </div>
+
                         <div className="product-info">
                             <h3>{product.name}</h3>
                             <p className="category">{product.category}</p>

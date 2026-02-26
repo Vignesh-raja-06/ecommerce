@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.13.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -17,5 +18,18 @@
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.1",
     "vite": "^5.4.1"
-  }
+  },
+  "description": "��#\u0000 \u0000e\u0000c\u0000o\u0000m\u0000m\u0000e\u0000r\u0000c\u0000e\u0000\r\u0000 \u0000#\u0000 \u0000e\u0000c\u0000o\u0000m\u0000m\u0000e\u0000r\u0000c\u0000e\u0000\r\u0000 \u0000",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vignesh-raja-06/ecommerce.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vignesh-raja-06/ecommerce/issues"
+  },
+  "homepage": "https://github.com/Vignesh-raja-06/ecommerce#readme"
 }
