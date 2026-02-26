@@ -4,7 +4,7 @@ const Contact = () => {
     return (
         <div className="page contact-page">
             <header className="page-header">
-                <h1>Get in <span className="gradient-text">Touch</span></h1>
+                <h1>tell me your opinions <span className="gradient-text"></span></h1>
                 <p>Have questions? We're here to help you find the perfect setup.</p>
             </header>
 
@@ -27,14 +27,13 @@ const Contact = () => {
 
                 <div className="contact-info">
                     <div className="info-card glass-card">
-                        <h3>Official Headquarters</h3>
-                        <p>123 Innovation Drive</p>
-                        <p>Silicon Valley, CA 94025</p>
+                        <h3>Offices address</h3>
+                        <p>acet </p>
+                        <p>villianur, puducherry</p>
                     </div>
                     <div className="info-card glass-card">
                         <h3>Support Hours</h3>
                         <p>Mon - Fri: 9am - 6pm EST</p>
-                        <p>Weekend: 10am - 2pm EST</p>
                     </div>
                     <div className="social-links">
                         <span className="social-icon">Twitter</span>
