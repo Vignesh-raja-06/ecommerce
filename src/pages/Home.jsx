@@ -5,40 +5,40 @@ const Home = ({ onShopNow }) => {
         <div className="page home-page">
             <section className="hero">
                 <div className="hero-content">
-                    <h1>Upgrade Your <span className="gradient-text">Student Life</span></h1>
-                    <p>Modern essentials for modern students. From high-performance laptops to ergonomic desk gear, we've got everything you need to excel.</p>
-                    <button className="cta-button" onClick={onShopNow}>Browse Catalog</button>
+                    <h1><span className="gradient-text">Student Life Improve by technologies</span></h1>
+                    <h2>Modern essentials for todays modern students. From high-performance laptops and desk gear, we've got everything from this environment</h2>
+                    <button className="cta-button" onClick={onShopNow}>Browse to more</button>
                 </div>
                 <div className="hero-stats">
                     <div className="stat">
-                        <span className="stat-value">10k+</span>
+                        <span className="stat-value">count</span>
                         <span className="stat-label">Students Served</span>
                     </div>
                     <div className="stat">
-                        <span className="stat-value">500+</span>
+                        <span className="stat-value">sale</span>
                         <span className="stat-label">Premium Products</span>
                     </div>
                     <div className="stat">
-                        <span className="stat-value">4.9/5</span>
+                        <span className="stat-value">hype points</span>
                         <span className="stat-label">User Rating</span>
                     </div>
                 </div>
             </section>
 
             <section className="featured-preview">
-                <h2>Trending Now</h2>
+                <h2>what we offer</h2>
                 <div className="preview-grid">
                     <div className="preview-item glass-card">
                         <h3>Laptops</h3>
-                        <p>Power through assignments.</p>
+                        <p>In 2026, many guides recommend mid-range machines (Core i5/Ryzen 5 with 8–16 GB RAM) as the best mix of performance and value for students.</p>
                     </div>
                     <div className="preview-item glass-card">
                         <h3>Accessories</h3>
-                        <p>Complete your setup.</p>
+                        <p>Many students find that a good mouse, keyboard, and webcam are essential for remote learning.</p>
                     </div>
                     <div className="preview-item glass-card">
-                        <h3>Lifestyle</h3>
-                        <p>Work hard, play hard.</p>
+                        <h3>work purposes</h3>
+                        <p>ideal for office productivity, remote work, video calls, MS Office, browsing, and everyday tasks.</p>
                     </div>
                 </div>
             </section>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Navbar = ({ activePage, setActivePage }) => {
+const Navbar = ({ activePage, setActivePage, cartCount }) => {
     return (
         <nav className="navbar">
             <div className="logo" onClick={() => setActivePage('home')}>Student Kart</div>
@@ -19,6 +19,25 @@ const Navbar = ({ activePage, setActivePage }) => {
                         </a>
                     </li>
                 ))}
+                <li key="cart">
+                    <a
+                        href="#cart"
+                        className={activePage === 'cart' ? 'active' : ''}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            setActivePage('cart');
+                        }}
+                    >
+                        Cart {cartCount > 0 && <span style={{
+                            background: 'var(--primary)',
+                            color: 'white',
+                            borderRadius: '50%',
+                            padding: '2px 8px',
+                            fontSize: '0.8rem',
+                            marginLeft: '5px'
+                        }}>{cartCount}</span>}
+                    </a>
+                </li>
             </ul>
         </nav>
     )

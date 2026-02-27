@@ -19,12 +19,12 @@ const Footer = () => {
                 </div>
                 <div className="footer-section">
                     <h4>Contact Us</h4>
-                    <p>Email: support@studentkart.com</p>
-                    <p>Phone: +1 (234) 567-890</p>
+                    <p>Email: studentkart@gmail.com</p>
+                    <p>Phone: +91 7603966424</p>
                 </div>
             </div>
             <div className="footer-bottom">
-                <p>&copy; {new Date().getFullYear()} Student Kart. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} Student Kart. All rights reserved. For Student's</p>
             </div>
         </footer>
     )

@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div className="page about-page">
             <section className="about-hero">
-                <h1>About <span className="gradient-text">Student Kart</span></h1>
+                <h1> <span className="gradient-text">For Little Info</span></h1>
                 <p className="lead">Empowering the next generation of innovators with the tools they need to succeed.</p>
             </section>
 
@@ -16,19 +16,19 @@ const About = () => {
 
             <section className="values">
                 <div className="value-item">
-                    <div className="icon">💎</div>
+                    <div className="icon"></div>
                     <h3>Quality First</h3>
-                    <p>We only stock items that we would use ourselves in our studies.</p>
+                    <p>Here are high-quality laptops ideal for work/professional use — prioritizing build quality, performance, durability, reliability, and long-term productivity in 2026.</p>
                 </div>
                 <div className="value-item">
-                    <div className="icon">🎓</div>
-                    <h3>Student Focused</h3>
-                    <p>Every decision we make starts with the question: 'How does this help a student?'</p>
+                    <div className="icon"></div>
+                    <h3>Customer Focused</h3>
+                    <p>Every decision we starts with the question: 'How does this help for every student?'</p>
                 </div>
                 <div className="value-item">
-                    <div className="icon">🌍</div>
+                    <div className="icon"></div>
                     <h3>Sustainable</h3>
-                    <p>We prioritize eco-friendly packaging and ethical sourcing.</p>
+                    <p>We prioritize eco-friendly packaging and fast delivery on time.</p>
                 </div>
             </section>
         </div>

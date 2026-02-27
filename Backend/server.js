@@ -8,11 +8,16 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+app.use((req, res, next) => {
+  console.log(`[Backend] Received request: ${req.method} ${req.url}`);
+  next();
+});
+
 /* ===============================
    CONFIG
 =================================*/
 
-const PORT = 5000;
+const PORT = 5001;
 const JWT_SECRET = "supersecretkey";
 const MONGO_URI = "mongodb://127.0.0.1:27017/ecommerceDB";
 
@@ -186,7 +191,7 @@ function fakePayment() {
 
 // Create Order (Checkout)
 app.post("/api/checkout", auth, async (req, res) => {
-  const { items } = req.body; 
+  const { items } = req.body;
   // items: [{ productId, quantity }]
 
   let total = 0;
