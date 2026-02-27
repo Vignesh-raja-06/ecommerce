@@ -46,6 +46,7 @@ const productSchema = new mongoose.Schema({
   price: Number,
   stock: Number,
   image: String,
+  category: String
 }, { timestamps: true });
 
 const orderSchema = new mongoose.Schema({
